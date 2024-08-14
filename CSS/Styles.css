@@ -65,6 +65,12 @@ header {
 .Texto-In{
     font-family: "Playfair Display", serif;
 }
+
+@media (max-width: 768px) {
+    header {
+        
+    }
+}
 /* Fin index */
 
 /* Incio Iglesia */
@@ -122,25 +128,105 @@ header {
 
 .Formulario{
     background-color: #D6CCC2;
-    display: flex;
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
     height: 50vh;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    color: #FF0000
+    grid-template-columns: repeat(2, 50%);
+    border-radius: 1%;
 }
 
+
+.Formulario__c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Formulario__codigo{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10%;
+}
+
+#Formulario__mensaje{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10%;
+}
 .Botones{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    padding: 0% 10%;
+    padding: 1% 10%;
     
 }
+footer{
+    padding-top: 5%;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .Formulario{
+        justify-content: center;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .Formulario__c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+    }
 
-#Asisto, #No-asisto {
-    border: 1px solid black;
-    border-radius: 10%;
-    padding: 1% 10%;
-    margin: 10px;
+    #Formulario__codigo{
+        height: 5rem;
+        border-radius: 10%;
+    }
+    #Formulario__mensaje{
+        height: 10rem;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Formulario{
+        justify-content: center;
+        grid-template-columns: repeat(1, 50%);
+    }
+    .Formulario__c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Formulario__codigo{
+        height: 2rem;
+        border-radius: 5%;
+    }
+    #Formulario__mensaje{
+        height: 10rem;
+        width: 20rem;
+        border-radius: 5%;
+    }
+}
+
+@media (max-width: 415px) {
+    .Formulario{
+        justify-content: center;
+        grid-template-columns: repeat(1, 50%);
+    }
+    .Formulario__c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Formulario__codigo{
+        height: 2rem;
+        border-radius: 2%;
+    }
+    #Formulario__mensaje{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 2%;
+    }
 }
