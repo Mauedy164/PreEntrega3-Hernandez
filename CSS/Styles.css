@@ -177,22 +177,7 @@ header {
 }
 /* Fin index */
 
-/* Incio Iglesia */
-
-/* .Basílica{
-    background-image: url(/Multimedia/Basilica-de-Guadalupe-1.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 80%;
-    size: cover;
-} */
-
-.Mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Incio Iglesia y salón */
 
 .Img-Basílica{
     width: 100%;
@@ -200,6 +185,42 @@ header {
     opacity: 80%;
 }
 
+.Mapa{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 2%;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 50%);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
+    .Mapa{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 100%);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .Mapa{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 100%);
+        text-align: center;
+        font-size: 2em;
+    }
+    .ubi{
+        width: 100%;
+    }
+}
 /* Itinerario */
 
 .Horario{
