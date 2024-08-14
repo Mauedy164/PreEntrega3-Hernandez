@@ -47,10 +47,10 @@ header {
 }
 
 .FotoPrincipal{
-    display: flex;
+    display: grid;
     width: 100%;
-    height: 100vh;
-    background-image: url(../Multimedia/Foto\ pareja.png);
+    height: 120vh;
+    background-image: url(../Multimedia/Foto-pareja-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -61,15 +61,119 @@ header {
 }
 .Casar{
   font-family: "Dancing Script", cursive;
+  font-size: 10em;
+  font-weight: 300;
+  text-align: center;
+  opacity: 100%;
 }
+.dia{
+    font-family: "Dancing Script", cursive;
+    font-size: 9em;
+    text-align: center;
+  }
 .Texto-In{
     font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 3em;
+    background-image: url(../Multimedia/Pareja-boda.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    padding: 2%;
+
 }
 
-@media (max-width: 768px) {
+.Navegacion {
+    font-family: "Playfair Display", serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    text-align: center;
+}
+@media (max-width: 1200px) {
     header {
-        
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-between;
+            text-align: center;
     }
+    .Encabezado{
+        justify-content: center;
+        padding-bottom: 2%;
+    }
+    .FotoPrincipal{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../Multimedia/Foto-pareja-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .Casar{
+        font-family: "Dancing Script", cursive;
+        font-size: 5em;
+        font-weight: 300;
+        text-align: center;
+      }
+      .dia{
+          font-family: "Dancing Script", cursive;
+          font-size: 4em;
+          text-align: center;
+        }
+
+        .Texto-In{
+            font-family: "Playfair Display", serif;
+            text-align: center;
+            font-size: 1em;
+        }
+}
+
+@media (max-width: 576px) {
+    header {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-between;
+            text-align: center;
+    }
+    .Encabezado{
+        justify-content: center;
+        padding-bottom: 2%;
+    }
+    .FotoPrincipal{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../Multimedia/Foto-pareja-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .Casar{
+        font-family: "Dancing Script", cursive;
+        font-size: 3em;
+        font-weight: 300;
+        text-align: center;
+      }
+      .dia{
+          font-family: "Dancing Script", cursive;
+          font-size: 2em;
+          text-align: center;
+        }
+
+        .Texto-In{
+            font-family: "Playfair Display", serif;
+            text-align: center;
+            font-size: 1em;
+        }
 }
 /* Fin index */
 
