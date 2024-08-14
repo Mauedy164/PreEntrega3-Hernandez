@@ -39,6 +39,13 @@ header {
     padding: 10px;
 }
 
+.navegacion-link:hover{
+    color: rgb(53, 104, 151);
+}
+.navegacion-link{
+    padding: 10px;
+}
+
 .FotoPrincipal{
     display: flex;
     width: 100%;
