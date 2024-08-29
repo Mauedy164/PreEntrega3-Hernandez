@@ -1,0 +1,34 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDEDE9;
+    align-items: center;
+    padding: 5px;
+
+}
+.Encabezado {
+    display: flex;
+    align-items: center;
+}
+
+.Nombres{
+    padding-right: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+
+.nav-link:hover{
+    color: rgb(53, 104, 151);
+}
+.nav-link{
+    padding: 10px;
+}
+
+.navegacion-link:hover{
+    color: rgb(53, 104, 151);
+}
+.navegacion-link{
+    padding: 10px;
+}
