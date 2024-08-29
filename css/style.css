@@ -1,0 +1,338 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EDEDE9;
+  align-items: center;
+  padding: 5px;
+}
+
+.Encabezado {
+  display: flex;
+  align-items: center;
+}
+
+.Nombres {
+  padding-right: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.nav {
+  font-family: "Playfair Display", serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  text-align: center;
+}
+.nav-link {
+  padding: 10px;
+}
+.nav-link:hover {
+  color: rgb(53, 104, 151);
+}
+
+.FotoPrincipal {
+  display: grid;
+  width: 100%;
+  height: 120vh;
+  background-image: url(../Multimedia/Foto-pareja-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.Casar {
+  font-family: "Dancing Script", cursive;
+  font-size: 10em;
+  font-weight: 300;
+  text-align: center;
+  opacity: 100%;
+}
+
+.dia {
+  font-family: "Dancing Script", cursive;
+  font-size: 9em;
+  text-align: center;
+}
+
+.Texto-In {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 3em;
+  background-image: url(../Multimedia/Pareja-boda.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 2%;
+}
+
+@media (max-width: 1200px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    text-align: center;
+  }
+  .Encabezado {
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+  .FotoPrincipal {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Multimedia/Foto-pareja-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .Casar {
+    font-family: "Dancing Script", cursive;
+    font-size: 5em;
+    font-weight: 300;
+    text-align: center;
+  }
+  .dia {
+    font-family: "Dancing Script", cursive;
+    font-size: 4em;
+    text-align: center;
+  }
+  .Texto-In {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    text-align: center;
+  }
+  .Encabezado {
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+  .FotoPrincipal {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Multimedia/Foto-pareja-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .Casar {
+    font-family: "Dancing Script", cursive;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+  }
+  .dia {
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    text-align: center;
+  }
+  .Texto-In {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+@media (max-width: 1300px) {
+  .Mapa {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 100%);
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .Mapa {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 100%);
+    text-align: center;
+    font-size: 2em;
+  }
+  .ubi {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .Formulario {
+    justify-content: center;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .Formulario__c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+  }
+  #Formulario__codigo {
+    height: 5rem;
+    border-radius: 10%;
+  }
+  #Formulario__mensaje {
+    height: 10rem;
+    width: 18rem;
+  }
+}
+@media (max-width: 768px) {
+  .Formulario {
+    justify-content: center;
+    grid-template-columns: repeat(1, 50%);
+  }
+  .Formulario__c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Formulario__codigo {
+    height: 2rem;
+    border-radius: 5%;
+  }
+  #Formulario__mensaje {
+    height: 10rem;
+    width: 20rem;
+    border-radius: 5%;
+  }
+}
+@media (max-width: 415px) {
+  .Formulario {
+    justify-content: center;
+    grid-template-columns: repeat(1, 50%);
+  }
+  .Formulario__c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Formulario__codigo {
+    height: 2rem;
+    border-radius: 2%;
+  }
+  #Formulario__mensaje {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 2%;
+  }
+}
+.Img-Basílica {
+  width: 100%;
+  background-repeat: no-repeat;
+  opacity: 80%;
+}
+
+.Mapa {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 2%;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, 50%);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  text-align: center;
+}
+
+.Horario {
+  display: flex;
+  justify-content: center;
+  padding: 1% 25%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Itinerario {
+  display: block;
+  margin-top: auto;
+}
+
+.Íconos {
+  height: 100px;
+}
+
+footer {
+  padding-top: 5%;
+  text-align: center;
+}
+
+#Pag-Registro {
+  font-family: "Playfair Display", serif;
+}
+
+.Titulo, .Texto-Re {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+}
+
+.Formulario {
+  background-color: #D6CCC2;
+  margin: 0 auto;
+  display: grid;
+  width: 80%;
+  height: 50vh;
+  grid-template-columns: repeat(2, 50%);
+  border-radius: 1%;
+}
+
+.Formulario__c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Formulario__codigo {
+  height: 3rem;
+  width: 15rem;
+  border-radius: 10%;
+}
+
+#Formulario__mensaje {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10%;
+}
+
+.Botones {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 1% 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

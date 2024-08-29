@@ -1,0 +1,44 @@
+#Pag-Registro{
+    font-family: "Playfair Display", serif;
+}
+.Titulo, .Texto-Re{
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+}
+
+.Formulario{
+    background-color: #D6CCC2;
+    margin: 0 auto;
+    display: grid;
+    width: 80%;
+    height: 50vh;
+    grid-template-columns: repeat(2, 50%);
+    border-radius: 1%;
+}
+
+
+.Formulario__c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Formulario__codigo{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10%;
+}
+
+#Formulario__mensaje{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10%;
+}
+.Botones{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1% 10%;
+    
+}

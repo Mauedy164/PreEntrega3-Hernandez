@@ -1,0 +1,20 @@
+.Img-Basílica{
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+.Mapa{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 2%;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 50%);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+}
