@@ -40,6 +40,7 @@ header {
   text-align: center;
 }
 .nav-link {
+  color: black;
   padding: 10px;
 }
 .nav-link:hover {
@@ -285,9 +286,30 @@ header {
   height: 100px;
 }
 
+.animacion {
+  animation: tambalear 2s infinite;
+}
+
+@keyframes tambalear {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 footer {
-  padding-top: 5%;
   text-align: center;
+  align-items: center;
 }
 
 #Pag-Registro {
@@ -333,6 +355,45 @@ footer {
   justify-content: center;
   justify-content: space-around;
   padding: 1% 10%;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  width: 100%;
+}
+.menu__general {
+  background-color: rgba(21, 14, 210, 0.568);
+}
+.menu__vegetariano {
+  background-color: rgba(210, 119, 14, 0.498);
+}
+.menu__general, .menu__vegetariano {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.menu__general li, .menu__vegetariano li {
+  list-style-type: none;
+}
+
+.titulo__menu {
+  font-size: 60px;
+  padding-bottom: 2%;
+}
+
+.bloque {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__menu {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
