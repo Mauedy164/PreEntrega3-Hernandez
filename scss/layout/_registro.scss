@@ -6,11 +6,13 @@
     display: flex;
     padding: 2% 0%;
     justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .Texto-Re{
-    font-size: 25px;
     display: flex;
+    justify-items: center;
     justify-content: center;
     padding: 0% 1%;
 }
@@ -21,13 +23,12 @@
     display: grid;
     width: 80%;
     height: 50vh;
-    grid-template-columns: repeat(2, 50%);
     border-radius: 1%;
 }
 
 
 .Formulario__c{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }

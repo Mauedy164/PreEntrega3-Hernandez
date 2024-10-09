@@ -170,6 +170,31 @@
 
 // Pagina de registro
 
+@media (min-width: 993px) {
+    .Formulario{
+        justify-content: center;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .Formulario__c{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+    }
+
+    #Formulario__codigo{
+        height: 5rem;
+        border-radius: 10%;
+    }
+    #Formulario__mensaje{
+        height: 10rem;
+        width: 18rem;
+    }
+    .Texto-Re{
+        font-size: 25px;
+    }
+}
+
 @media (max-width: 992px) {
     .Formulario{
         justify-content: center;
@@ -189,6 +214,9 @@
     #Formulario__mensaje{
         height: 10rem;
         width: 18rem;
+    }
+    .Texto-Re{
+        font-size: 25px;
     }
 }
 
@@ -212,6 +240,9 @@
         width: 20rem;
         border-radius: 5%;
     }
+    .Texto-Re{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 415px) {
@@ -233,6 +264,9 @@
         height: 10rem;
         width: 10rem;
         border-radius: 2%;
+    }
+    .Texto-Re{
+        font-size: 1em;
     }
 }
 
