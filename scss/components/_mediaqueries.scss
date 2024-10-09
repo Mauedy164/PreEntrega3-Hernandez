@@ -86,13 +86,55 @@
 }
 
 // Incio Iglesia y salón
+@media (min-width: 1301px) {
+    .Mapa{
+        font-size: 3em;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    .ubi{
+        width: 100%;
+    }
+}
 
 @media (max-width: 1300px) {
     .Mapa{
         display: grid;
         justify-items: center;
+        text-align: center;
+        grid-template-columns: 1fr 5fr 1fr;
+        font-size: 2.5em;
+    }
+    .ubi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Mapa{
+        display: grid;
+        grid-template-columns: 1 1fr;
+        gap: 10px;
+        text-align: center;
+        font-size: 2.5em;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+
+    .ubi{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Mapa{
+        display: grid;
+        justify-items: center;
         grid-template-columns: repeat(1, 100%);
         text-align: center;
+        font-size: 1.5em;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    .ubi{
+        width: 100%;
     }
 }
 
@@ -100,13 +142,30 @@
     .Mapa{
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(1, 100%);
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
+        grid-template-columns: 1fr 9fr 1fr;
+
     }
     .ubi{
         width: 100%;
+        height: 80%;
     }
+}
+
+@media (max-width: 415px) {
+    .Mapa{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        font-size: 1em;
+        grid-template-columns: 10% 80% 10%;
+    }
+    .ubi{
+        width: 80%;
+    }
+
+
 }
 
 // Pagina de registro
