@@ -10,6 +10,9 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    grid-template-columns: 1 1f;
+    grid-template-rows: 50% 50%;
+
 }
 .Casar{
   font-family: "Dancing Script", cursive;
@@ -17,11 +20,13 @@
   font-weight: 300;
   text-align: center;
   opacity: 100%;
+
 }
 .dia{
     font-family: "Dancing Script", cursive;
     font-size: 9em;
     text-align: center;
+
 }
 
 .Texto-In{
